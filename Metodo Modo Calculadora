@@ -1,0 +1,39 @@
+public class MetodoModoCalculadora {
+    /*
+Crie uma pequena calculadora de subtração e adição
+Crie um programa que peça dois números do usuário e também qual a operação ele deseja fazer - adição ou subtração.
+ Para cada operação, você deve construir um método que realize a mesma, ou seja, teremos um método para adição,
+ que vai receber dois números como parâmetros e retornar o resultado da soma entre eles, e outro método para subtração.
+Fique a vontade para implementar multiplicação e divisão também.
+ */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        imprimirTraco();
+        System.out.print("POR FAVOR, INFORME O PRIMEIRO NÚMERO: ");
+        Double primeiroNumero = scanner.nextDouble();
+        System.out.print("POR FAVOR, INFORME O SEGUNDO NÚMERO: ");
+        Double segundoNumero = scanner.nextDouble();
+        System.out.println("ESCOLHA A OPERAÇÃO:" + /n "1 = +" + /n "2 = -" + /n "3 = *" + /n + "4 = /");
+        Interger operacao = scanner.nextint();
+        imprimirTraco();
+        Double resultado = null;
+        if (operacao.equals(1)) {
+            resultado = primeiroNumero + segundoNumero;
+        }
+        if (operacao.equals(2)) {
+            resultado = primeiroNumero - segundoNumero;
+        }
+        if (operacao.equals(3)) {
+            resultado = primeiroNumero * segundoNumero;
+        }
+        if (operacao.equals(4)) {
+            resultado = primeiroNumero / segundoNumero;
+        }
+        System.out.println("RESULTADO:" + resultado);
+        imprimirTraco();
+    static void imprimirTraco()  {
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+        }
+        Scanner.close();
+    }
+}
