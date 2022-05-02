@@ -16,7 +16,7 @@ public class MetodoDeCalculadora {
             System.out.print("POR FAVOR, INFORME O SEGUNDO NÚMERO: ");
             Double segundoNumero = scanner.nextDouble();
             System.out.println("ESCOLHA A OPERAÇÃO:" + /n "1 = +" + /n "2 = -" + /n "3 = *" + /n + "4 = /");
-            int operacao = scanner.nextInt();
+            integer operacao = scanner.nextInt();
             imprimirTraco();
             Double resultado = null;
             if (operacao.equals(1)) {
